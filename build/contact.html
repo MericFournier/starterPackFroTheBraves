@@ -96,3 +96,73 @@
     
    
   
+<div class="contact__information">
+   <h1>Informations</h1>
+   <div class="main">
+      <div class="google__map"> 
+         <div id="map"></div>   
+      </div>
+      <div class="contact__informations__main">
+         <p><span>lorem :</span>ipsum</p>
+         <p><span>lorem :</span>ipsum</p>
+         <p><span>lorem :</span>ipsum</p>
+         <p><span>lorem :</span>ipsum</p>
+         <p><span>lorem :</span>ipsum</p>
+         <p><span>lorem :</span>ipsum</p>
+         <p><span>lorem :</span>ipsum</p>
+         <p><span>lorem :</span>ipsum</p>
+         <p><span>lorem :</span>ipsum</p>
+      </div>
+   </div>
+</div>
+<div class="contact__form">
+   <h1>Nous Contacter</h1>
+   <form class="contact__form__form" action="#" method="#">
+      <formset class="base">
+         <label>
+            <p>Name</p>
+            <input class="input" type="text" id="name" class="input__name">
+         </label>
+         <label>
+            <p>Votre Email</p>
+            <input class="input" type="email" id="email" class="input__email">
+         </label>
+         <label>
+            <p>Sujet</p>
+            <input class="input" type="mail" id="email" class="input__email">
+         </label>
+      </formset>
+      <formset class="message">
+         <label>
+            <p>votre message</p>
+            <textarea class="textarea" class="input__message" id="message">
+            </textarea>
+         </label>
+      </formset>
+      <button type="submit" class="button__submit">Envoyer</button>
+   </form>
+</div>
+
+
+<script>
+   function initMap() {
+      var uluru = {lat: 40.761469, lng: -73.973497};
+      var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 14,
+         center: uluru
+      });
+      var infowindow = new google.maps.InfoWindow({
+         content: "Columbia"
+      });
+      var marker = new google.maps.Marker({
+         position: uluru,
+         map: map
+      });
+      marker.addListener('click', function() {
+         infowindow.open(map, marker);
+      });
+   }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxYPqrz1uib2_O6QHKHQqtF3QSK2neIW4&callback=initMap">
+</script>
