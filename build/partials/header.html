@@ -1,57 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
 
-    <title>Mon Site</title>
+  <title>Mon Site</title>
 
-    <!-- SEO meta -->
-    <meta name="robots" content="index, follow" />
-    <meta name="description" content="" />
-    <!-- End SEO meta -->
+  <!-- SEO meta -->
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="" />
+  <!-- End SEO meta -->
 
-    <!-- IE meta -->
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <!-- End IE meta -->
+  <!-- IE meta -->
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <!-- End IE meta -->
 
-    <!-- Apple meta -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="" />
-    <!-- End Apple meta -->
+  <!-- Apple meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="" />
+  <!-- End Apple meta -->
 
-    <!-- Mobile meta -->
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
-    <!-- End mobile meta -->
+  <!-- Mobile meta -->
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+  <!-- End mobile meta -->
 
-    <!-- Facebook meta -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content=""/>
-    <meta property="og:title" content=""/>
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content=""/>
-    <meta property="og:description" content=""/>
-    <!-- End Facebook meta -->
+  <!-- Facebook meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- End Facebook meta -->
 
-    <!-- Twitter meta -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:site" content="" />
-    <meta name="twitter:image" content="" />
-    <!-- End Twitter meta -->
+  <!-- Twitter meta -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:image" content="" />
+  <!-- End Twitter meta -->
 
-    <!-- build:css -->
-    <link rel="stylesheet" href="css/app.css">
-    <!-- endbuild -->
+  <!-- build:css -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <!-- endbuild -->
 
 </head>
-<body>
 
-    <header>
-       <p>Mon Site</p>
-    </header>
-    <!-- END HEADER MOBILE -->
+<body>
+  <!-- Header -->
+  <header class="header open">
+    <div class="container">
+
+      <!-- logo desktop -->
+      <div class="logo__desktop">
+        <div class="logo">
+          <div class="img-fluid-container">
+            <a href="#" alt="">
+                <img src="img/logo.png" alt="" />
+              </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- header mobile top bar  -->
+      <div class="navigation__mobile">
+        <button class="navigation__mobile__burger"></button>
+        <div class="logo logo__mobile">
+          <div class="logo">
+            <div class="img-fluid-container">
+              <a href="#" alt="">
+                  <img src="img/logo.png" alt="" />
+                </a>
+            </div>
+          </div>
+        </div>
+        <button class="navigation__mobile__search"></button>
+      </div>
+
+
+      <!-- mobile search form -->
+        <form class="form form__header--mobile mobile__switch mobile__switch--form hidden__element__header" method="#" action="#">
+          <input type="text" name="search__header" class="input input__searchHeader--mobile" />
+          <button type="submit" class="button__searchHeader--mobile"></button>
+        </form>
+
+
+
+      <section class="mobile__switch mobile__switch--nav hidden__element__header">
+        <!-- mobile close + name -->
+        <div class="header__mobileContect">
+          <button class="header__close"></button>
+          <h3>Menu</h3>
+        </div>
+
+        <!-- main nav -->
+        <nav class="nav nav__header nav__header--desktop ">
+          <ul>
+            <li class="navigation__linkHome">
+              <a href="#" alt="">
+                Accueil
+              </a>
+            </li>
+            <li class="current__selected">
+              <a href="#" alt="">
+                Culture
+              </a>
+            </li>
+            <li>
+              <a href="#" alt="">
+                Lifestyle
+              </a>
+            </li>
+            <li>
+              <a href="#" alt="">
+                Concours
+              </a>
+            </li>
+            <li>
+              <a href="#" alt="">
+                Evenements
+              </a>
+            </li>
+            <li>
+              <a href="#" alt="">
+                À propos
+              </a>
+            </li>
+            <li>
+              <a href="#" alt="">
+                Contact
+              </a>
+            </li>
+            <li class="navigation__searchBar">
+              <form class="form form__header" method="#" action="#">
+                <input type="text" name="search__header" class="input input__searchHeader activeSearch" />
+                <button type="submit" class="button__searchHeader"></button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- socials media for mobile -->
+        <div class="mobile__socials">
+          <p>Retrouvez Restez-In sur les réseaux sociaux</p>
+          <nav class="nav nav__header--socials">
+            <ul>
+              <li>
+                <a href="#" alt="">
+                  <img src="img/icons/facebook.png" alt="" class="img__responsive" />
+                </a>
+              </li>
+              <li>
+                <a href="#" alt="">
+                    <img src="img/icons/twitter.png" alt="" class="img__responsive" />
+                  </a>
+              </li>
+              <li>
+                <a href="#" alt="">
+                    <img src="img/icons/instagram.png" alt="" class="img__responsive" />
+                  </a>
+              </li>
+              <li>
+                <a href="#" alt="">
+                    <img src="img/icons/youtube.png" alt="" class="img__responsive" />
+                  </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+    </div>
+  </header>
+  <!-- End Header-->

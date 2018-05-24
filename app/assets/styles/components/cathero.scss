@@ -1,0 +1,42 @@
+.hero__cover {
+  width: ( 100% / 9) * 8;
+  margin-bottom:-120px;
+
+  @media screen and ( max-width: $desktop ) {
+    width:100%;
+  }
+  @media screen and ( max-width: $tablet ) {
+    margin-bottom:120px;
+  }
+}
+
+.hero__image {
+  height: 535px;
+  overflow:hidden;
+  width:100%;
+
+  @media screen and ( max-width: $tablet ) {
+    height: 236px;
+  }
+}
+.hero__cover .hero__caption {
+  width: 80%;
+  margin: 0 auto;
+  background-color:$white;
+  padding:40px 50px;
+  transform:translateY(-50%);
+  border-radius:3px;
+
+  @media screen and ( max-width: $tablet ) {
+    width:100%;
+    margin-top:20px;
+    transform:none;
+    padding:0px;
+  }
+
+  h3 {
+    @extend h2;
+    margin-top:16px;
+    margin-bottom:20px;
+  }
+}

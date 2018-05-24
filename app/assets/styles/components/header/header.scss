@@ -1,0 +1,51 @@
+.header {
+  height:0px;
+  width:100%;
+  background-color:white;
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index:99999;
+  overflow:hidden;
+  transition: 300ms ease-out all;
+  @media screen and ( max-width : $tablet ) {
+    height: 80px;
+  }
+
+  .container {
+      width: ( 100% / 12 ) * 11;
+      margin: 0 auto;
+      float:none;
+    }
+  @media screen and ( max-width : $tablet ) {
+    //position:fixed;
+    //top:0px;
+    //left:0px;
+    height:auto;
+    width:100%;
+    z-index:99999;
+    overflow-y:scroll;
+  }
+  .container {
+    height:100%;
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    justify-content:space-between;
+
+    @media screen and ( max-width : $tablet ) {
+      display:block;
+      height:auto;
+      height:100%;
+    }
+  }
+}
+
+.header.open {
+  height:110px;
+  transition: 300ms ease-out all;
+
+  @media screen and ( max-width : $tablet ) {
+    height: 80px;
+  }
+}

@@ -1,0 +1,51 @@
+.button__container {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+button, a {
+  cursor:pointer;
+}
+.button__general {
+  width:220px;
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid $dark;
+  border-radius: 5px;
+  text-transform:uppercase;
+}
+
+.button__loadmore {
+  margin-top:50px;
+}
+
+.button__action {
+  width:45%;
+  max-width:200px;
+  padding:16px 0px;
+  text-align:center;
+  border:1px solid $dark;
+  border-radius:3px;
+  box-sizing:border-box;
+  text-transform:uppercase;
+}
+
+.filtre__button {
+  padding:8px 0px;
+  display:none;
+  @media screen and ( max-width: $tablet ) {
+    display:block;
+  }
+
+}
+
+.filtre__action {
+  display:none;
+
+  @media screen and ( max-width: $tablet ) {
+    display:block;
+  }
+}

@@ -1,0 +1,151 @@
+.container {
+  width:(100% / 12) * 10;
+  float:right;
+
+  @media screen and ( max-width: $desktop ) {
+    float:inherit;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.container__side {
+  width:(100% / 12) * 9;
+  float:right;
+
+  @media screen and ( max-width: $desktop ) {
+    float:inherit;
+    margin: 40px auto;
+    width:(100% / 12) * 10;
+  }
+  @media screen and ( max-width: $mobile ) {
+    margin: 20px auto;
+  }
+}
+
+.img-fluid-container {
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  a {
+    position:relative;
+    width:100%;
+    height:100%;
+    display:block;
+
+    img {
+      width:100%;
+      height:auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+
+.layout__double {
+  width:100%;
+  display:flex;
+  align-items:flex-start;
+  flex-direction:row;
+  justify-content:space-between;
+
+  @media screen and ( max-width: $desktop ) {
+    flex-direction:column;
+  }
+}
+
+.layout__double__item {
+  width:50%;
+  overflow:hidden;
+
+  @media screen and ( max-width: $desktop ) {
+    width:100%;
+  }
+}
+
+
+.clear {
+  clear:both;
+}
+
+.fluid__container {
+  width:100%;
+}
+
+.container__content {
+  width:( 100% / 10 ) * 9;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:top;
+  margin-bottom:120px;
+
+
+
+  @media screen and ( max-width: $desktop ) {
+    width:100%;
+  }
+
+  @media screen and ( max-width: $tablet ) {
+    flex-direction:column;
+  }
+
+
+}
+
+.category__select {
+  display:flex;
+  align-items:center;
+  width:100%;
+  margin-bottom:$spacing * 4px;
+  display:none;
+  justify-content:space-around !important;
+
+  @media screen and ( max-width : $desktop ) {
+    margin-bottom:0;
+  }
+  @media screen and ( max-width : $tablet ) {
+    justify-content:space-between;
+    margin-bottom:30px;
+  }
+  @media screen and ( max-width : $mobile ) {
+    justify-content:space-between;
+    margin-bottom:50px;
+  }
+}
+
+.contenu {
+  padding-top:110px;
+  margin-top: $spacing*3px;
+  margin-bottom:$spacing*10px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-end;
+
+  @media screen and ( max-width: $desktop ) {
+    flex-direction:column;
+  }
+  @media screen and ( max-width: $tablet ) {
+    padding-top: 60px;
+  }
+}
+
+.home__container {
+  width: ( 100% / 12 ) * 11;
+
+  .container {
+    width:(100% / 11) * 10;
+  }
+
+  @media screen and ( max-width: $desktop ) {
+    width: 100%;
+  }
+}
+
+.hidden__element__header {
+  @media screen and ( max-width : $tablet ) {
+    display:none !important;
+  }
+}

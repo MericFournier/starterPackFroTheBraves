@@ -1,1 +1,41 @@
-@import 'style'; 
+@import './base/reset';
+
+@import './base/variables';
+@import './base/grid';
+@import './base/base';
+@import './base/layout';
+@import './base/skelet';
+@import './base/typo';
+
+@import './components/header/logo-header';
+@import './components/header/header';
+@import './components/header/header-navigation';
+@import './components/header/navigation__mobile';
+@import './components/header/mobileContext';
+@import './components/header/mobile__socials';
+
+@import './components/forms';
+@import './components/buttons';
+@import './components/calendrier';
+@import './components/cathero';
+@import './components/blockApropos';
+@import './components/aside';
+
+@import './components/footer/footer';
+@import './components/footer/footer-info-photo';
+@import './components/footer/footer--navs';
+@import './components/slider__main/slider__main';
+@import './components/slider__main/main__view';
+@import './components/slider__main/slider__menu';
+@import './components/blockArticle';
+@import './components/blockConcours';
+
+@import './components/forms/checkbox';
+@import './components/forms/radios';
+
+@import './components/article/article';
+@import './components/article/article__hero';
+@import './components/article/article__content';
+@import './components/article/article__box';
+@import './components/article/article__commentaires';
+@import './components/article/article__concours';

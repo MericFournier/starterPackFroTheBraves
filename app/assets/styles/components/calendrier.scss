@@ -1,0 +1,79 @@
+.calendar__main {
+  width:(100% / 10) * 8;
+  align-items:flex-start;
+  justify-content:space-between;
+  display:flex;
+  margin-top:50px;
+  position:relative;
+  flex-wrap:nowrap;
+
+
+  @media screen and ( max-width : $desktop ) {
+    width:100%;
+    flex-wrap:wrap;
+  }
+
+  &:after {
+    content: '';
+    position:absolute;
+    top:20px;
+    left:48%;
+    width: (100%/8) * 10;
+    height:100%;
+    background-color:$beige;
+    z-index:-1;
+    border-radius:20px 0px 20px 0px;
+    transform:skew(-5deg) translateX(-50%);
+
+    @media screen and ( max-width : $desktop ) {
+      display:none;
+    }
+  }
+}
+
+.calendar__item {
+  width: ( 100% / 8) * 2;
+  margin-right:20px;
+
+  @media screen and ( max-width : $desktop ) {
+    width:45%;
+    margin-right:0px;
+    padding-right:5%;
+    margin-top:40px;
+  }
+
+  @media screen and ( max-width : $mobile ) {
+    width: 100%;
+    display:flex;
+
+    align-items:flex-start
+  }
+
+  .category {
+    margin:16px 0px;
+    font-size:12px;
+    @media screen and ( max-width : $mobile ) {
+      margin: 0px;
+    }
+  }
+
+  p {
+    font-size:16px;
+  }
+
+  h3 {
+    @extend h2;
+    @media screen and ( max-width : $mobile ) {
+      width:25%;
+      margin-right:20px;
+      font-size:22px;
+    }
+  }
+
+  .infos {
+    @media screen and ( max-width : $mobile ) {
+      width:75%;
+    }
+
+  }
+}

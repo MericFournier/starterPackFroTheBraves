@@ -1,0 +1,24 @@
+.footer {
+  background-color:$dark;
+  color:$white;
+  padding-bottom:50px;
+  padding-top:110px;
+  color:$white;
+  .container {
+    width: ( 100% / 12 ) * 10;
+    margin: 0 auto;
+    float:none;
+  }
+  p {
+    color:$white;
+  }
+}
+.footer__copyright {
+  font-family:$montserrat;
+  font-size:12px;
+  color:$white;
+  text-align:center;
+  font-weight:400;
+  margin-top:70px;
+  opacity:0.5;
+}

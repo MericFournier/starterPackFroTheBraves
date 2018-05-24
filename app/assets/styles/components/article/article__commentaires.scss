@@ -1,0 +1,65 @@
+.commentaires {
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+
+  @media screen and ( max-width: $desktop ) {
+    flex-direction:column-reverse;
+
+  }
+
+  .title__contained {
+    font-size:22px;
+  }
+}
+
+.add__comment {
+  @extend .button__general;
+}
+
+.liste__commentaires {
+  width:50%;
+
+  @media screen and ( max-width: $desktop ) {
+    width:100%;
+    margin-bottom:60px;
+  }
+
+  .button__general {
+    margin:0 auto;
+    margin-top:6px*$spacing;
+    font-size:16px;
+    width:300px;
+  }
+}
+
+.commentaire {
+  width:80%;
+  margin-top:4px*$spacing;
+
+  @media screen and ( max-width: $tablet ) {
+    width:100%;
+  }
+
+  .commentaire__content {
+    margin-top:2px*$spacing;
+  }
+}
+
+.add__commentaire {
+  width:50%;
+
+  @media screen and ( max-width: $desktop ) {
+    width:100%;
+    margin-bottom:60px;
+  }
+
+  form {
+    width:80%;
+
+    @media screen and ( max-width: $desktop ) {
+      width:100%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.slider__main {
+  width:( 100% / 11 ) * 11;
+  height:670px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  overflow:hidden;
+
+  @media screen and ( max-width : $desktop ) {
+    width:( 100% / 12 ) * 12;
+    height:450px;
+    justify-content:flex-start;
+    margin-left:20px;
+    margin-right:20px;
+
+  }
+  @media screen and ( max-width : $mobile ) {
+    height:490px;
+
+  }
+}
+.slider__main__container {
+  width:100%;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  margin-bottom:120px;
+}

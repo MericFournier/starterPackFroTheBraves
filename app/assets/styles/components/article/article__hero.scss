@@ -1,0 +1,17 @@
+.article__hero {
+  width:100%;
+  margin-bottom:4px*$spacing;
+}
+
+.article__hero__image {
+  height:473px;
+
+  @media screen and ( max-width: $tablet) {
+    height: 236px;
+  }
+}
+
+.article__hero .category {
+  margin-top: 4px*$spacing;
+  margin-bottom:1px*$spacing;
+}

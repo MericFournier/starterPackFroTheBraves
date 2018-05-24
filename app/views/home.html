@@ -1,0 +1,57 @@
+<!-- @include ./partials/header.html -->
+
+<div class="contenu">
+  <div class="aside__social">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="img/icons/socials/facebook.png" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/icons/socials/instagram.png" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/icons/socials/twitter.png" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="img/icons/socials/youtube.png" />
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="home__container">
+    <!-- @include ./partials/home/slider.html -->
+    <div class="container">
+
+      <h2 class="title">Derniers Articles</h2>
+      <div class="articles__list container__content">
+        <!-- @include ./partials/block__article.html -->
+        <!-- @include ./partials/block__article.html -->
+        <!-- @include ./partials/block__article.html -->
+        <!-- @include ./partials/block__article.html -->
+        <div class="fluid__container button__container">
+          <button class="button__general button__loadmore">Voir plus d'articles</button>
+        </div>
+      </div>
+
+      <h2 class="title">Concours du moment</h2>
+      <div class="container__content concours__moment">
+        <!-- @include ./partials/block__concours.html -->
+      </div>
+
+      <h2 class="title">Événements à venir</h2>
+      <div class="container__content next__event">
+        <!-- @include ./partials/calendrier.html -->
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- @include ./partials/footer.html -->

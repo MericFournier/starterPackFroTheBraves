@@ -1,0 +1,6 @@
+.article {
+  width: ( 100% / 9 ) * 8;
+  @media screen and ( max-width: $desktop) {
+    width:100%;
+  }
+}
